@@ -1,9 +1,9 @@
 # Anomaly_detection_with_XAI
-# Anomaly Detection in Bitcoin Blockchain Transactions with Advanced ML and Explainable AI
+## Anomaly Detection in Bitcoin Blockchain Transactions with Advanced ML and Explainable AI
 
 This project focuses on building a robust system to detect anomalous (potentially fraudulent) transactions in Bitcoin using advanced Machine Learning (ML) techniques and Explainable AI (XAI). Addressing a highly imbalanced dataset (30M+ transactions, only 108 anomalies), the project integrates custom sampling, ensemble modeling, and SHAP-based interpretation for model transparency and real-time deployment.
 
-## Key Features & Methodology
+### Key Features & Methodology
 #### Handling Class Imbalance:
 Implemented 7 sampling techniques including Random Undersampling (RUS), NearMiss, SMOTE, ADASYN, SMOTENN, SMOTETomek, and a custom clustering-based undersampling technique—XGBCLUS—which showed superior performance in improving true positive rates.
 
@@ -31,11 +31,15 @@ Derived interpretable decision rules from trained models for actionable insights
 Deployed the best-performing stacked ensemble model (trained on XGBCLUS-sampled data) using Google Colab for real-time fraud detection.
 Also prepared the pipeline for Docker containerization, enabling portability and future third-party use.
 
+
 ### Technologies Used
 Programming Language: Python
-Libraries: NumPy, pandas, scikit-learn, imbalanced-learn, matplotlib, seaborn, SHAP
-Sampling Techniques: SMOTE, ADASYN, SMOTENN, SMOTETomek, XGBCLUS
-Machine Learning Models: Decision Tree, Random Forest, Gradient Boosting, AdaBoost, Stacking Classifier
-Explainability: SHAP (bar plots, force plots)
+**Libraries:** NumPy, pandas, scikit-learn, imbalanced-learn, matplotlib, seaborn, SHAP
+**Sampling Techniques:** SMOTE, ADASYN, SMOTENN, SMOTETomek, XGBCLUS
+**Machine Learning Models:** Decision Tree, Random Forest, Gradient Boosting, AdaBoost, Stacking Classifier
+**Explainability:** SHAP (bar plots, force plots)
+**Deployment Tools:** Google Colab
 
-Deployment Tools: Google Colab
+
+### Data Source:
+https://ieee-dataport.org/open-access/bitcoin-transactions-data-2011-2013
