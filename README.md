@@ -9,33 +9,22 @@ Implemented 7 sampling techniques including Random Undersampling (RUS), NearMiss
 
 #### Model Development:
 Trained and compared 4 tree-based classifiers:
-
 Decision Tree
-
 Random Forest
-
 Gradient Boosting
-
 AdaBoost
 
 #### Evaluated 3 ensemble methods:
-
 Stacking (with Logistic Regression as meta-model)
-
 Hard Voting
-
 Soft Voting
-
 
 In total, 49 model–sampling combinations were tested to identify the optimal pipeline for anomaly detection.
 
 #### Explainable AI (XAI):
 Used SHAP (SHapley Additive Explanations) for both global and local interpretability.
-
 Bar plots of mean absolute SHAP values revealed key features driving predictions.
-
 Force plots explained individual transaction classifications and helped interpret model decisions transparently.
-
 Derived interpretable decision rules from trained models for actionable insights.
 
 #### Deployment
@@ -44,13 +33,9 @@ Also prepared the pipeline for Docker containerization, enabling portability and
 
 ### Technologies Used
 Programming Language: Python
-
 Libraries: NumPy, pandas, scikit-learn, imbalanced-learn, matplotlib, seaborn, SHAP
-
 Sampling Techniques: SMOTE, ADASYN, SMOTENN, SMOTETomek, XGBCLUS
-
 Machine Learning Models: Decision Tree, Random Forest, Gradient Boosting, AdaBoost, Stacking Classifier
-
 Explainability: SHAP (bar plots, force plots)
 
 Deployment Tools: Google Colab
